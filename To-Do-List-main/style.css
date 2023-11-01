@@ -1,0 +1,235 @@
+html, body {
+    background-color: #333; /* Dark background color */
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* White text color */
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputContainer {
+    text-align: center;
+}
+
+#taskInput {
+    border-radius: 20px;
+    border: none;
+    height: 40px; /* Adjusted for better visibility */
+    width: 250px; /* Adjusted for better visibility */
+    caret-color: transparent;
+    padding: 0 10px;
+
+}
+
+button {
+    background-color: #5b19c4; /* Blue button background color */
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    background-color: #381077; /* Darker blue on hover */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3rem; /* Adjusted for better readability */
+    text-align: center;
+    font-weight: 500;
+    margin: 2rem 0; /* Adjusted for better spacing */
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem; /* Adjusted for better spacing */
+    font-size: 1.5rem; /* Adjusted for better readability */
+    border: 2px solid #5b19c4;
+    border-radius: 10px;
+    padding: 5px 50px;
+    margin: 5px;
+}
+
+.itemName {
+    margin: 0;
+    max-width: 29vw;
+    word-wrap: break-word;
+}
+
+.itemIcons {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 1vw;
+}
+
+.itemIcons button {
+    margin-left: 0.3vw;
+}
+
+.itemContainer {
+    padding: 2vh 0;
+    max-width: 900px;
+}
+
+@media only screen and (min-width: 2560px) {
+    #taskInput {
+        border-radius: 50px;
+        height: 100px;
+        width: 1500px;
+        padding: 0 10px;
+        font-size: 35px;
+    }
+
+    button {
+        background-color: transparent;
+        border-radius: 60px;
+        border-color: aliceblue;
+        border-style: solid;
+        border-width: 7px;
+        padding: 30px 80px;
+        color: aliceblue;
+        font-size: 50px;
+        transition: all 0.5s ease;
+    }
+
+    .title {
+        font-size: 200px;
+    }
+
+    .itemName {
+        font-size: 70px;
+        max-width: 1100px;
+    }
+    .itemContainer {
+        padding: 2vh 0;
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .title {
+        font-size: 6vw;
+        font-weight: 500;
+        margin: 4vw 0;
+    }
+
+    #taskInput {
+        border-radius: 20px;
+        border: none;
+        height: 5vh;
+        width: 78vw;
+        caret-color: transparent;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    .inputContainer button {
+        width: 80vw;
+        margin-bottom: 10px;
+    }
+
+    button {
+        border-radius: 20px;
+        padding: 5px 10px;
+        font-size: 3vw;
+        border-width: 4px;
+    }
+
+    .item {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .itemName {
+        margin: 0;
+        max-width: 57vw;
+    }
+
+    .itemIcons {
+        width: 20vw;
+        padding-left: 0.5vw;
+        flex-direction: column;
+    }
+
+    .itemIcons button {
+        margin-left: 0vw;
+        margin-bottom: 15px;
+    }
+
+    .itemContainer {
+        padding: 2vh 0;
+        width: 80vw;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 50px;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        font-size: 5vw;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    #taskInput {
+        font-size: 15px;
+        height: 50px;
+        width: 80%;
+        padding: 2px 15px;
+    }
+
+    .itemName {
+        padding: 1vh 0;
+        max-width: 80vw;
+        font-size: 20px;
+    }
+
+    .itemIcons {
+        width: 100vw;
+        padding-left: 0.5vw;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .itemIcons button {
+        margin: 1vh 0 1vh 1vh;
+        width: 40vw;
+    }
+}
